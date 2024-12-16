@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
+  getStudentDetails() {
+    console.log('stu function called...');
+    
+  }
+
 }
