@@ -1,12 +1,25 @@
-<p> today is my first day of cooding</p>
 
-<button (click)="getStudentDetails()">Submit</button>
-<button (click)="searchCourseById(10)">  course number</button>
-<button (click)="checkCaseStatus()"> check status</button>
+<ul>
+    <li><a (click)="NavigateToMens()">Mens</a></li>
+    <li><a (click)="NavigateToWomens()">Women</a></li>
+    <li><a (click)="NavigateTo('kids')">Kids</a></li>
+    <li><a (click)="NavigateTo('sale')">Sale</a></li>
+</ul>
+  
+<router-outlet></router-outlet>
+
+  
+  
+  
+  <!-- <p> today is my first day of cooding</p> -->
+
+<!-- <button (click)="getStudentDetails()">Submit</button> -->
+<!-- <button (click)="searchCourseById(10)">  course number</button> -->
+<!-- <button (click)="checkCaseStatus()"> check status</button> -->
 
 
-<button (click)="getCSInfo()"> Check CS INFO</button>
+<!-- <button (click)="getCSInfo()"> Check CS INFO</button> -->
 <!-- <button (click)="getTestINFO()"> click for result</button> -->
-<button (click)="getUNIList()"> click for details </button>
+<!-- <button (click)="getUNIList()"> click for details </button> -->
 <!-- <button (click)="getMovieRatings()"> click gor updates</button> -->
- <button (click)=" movieDetail()">click for movie rating</button>
+ <!-- <button (click)=" movieDetail()">click for movie rating</button>  -->

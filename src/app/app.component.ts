@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CourseService } from './course.service';
 import { state } from '@angular/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -15,10 +16,12 @@ export class AppComponent {
    classEnrollmentprise:number=21;
    iscourseavailable:boolean=false;
    courseService = inject(CourseService);
+
    stuD: any = {
     collegeInfo: 'hello',
     collegeInformation: ''
    }
+
    testData: any = [
     {name:'test1',ID:'1'},
     {name:'test2',ID:'2'},
@@ -99,7 +102,7 @@ export class AppComponent {
 
   }
 
-  constructor(private courservic: CourseService) {
+  constructor(private router: Router,private service:CourseService) {
     this.getdownvalues()
   }
 
@@ -152,7 +155,19 @@ export class AppComponent {
     console.log(this. movieDetails.movieRating);
     this.courseService.fetchMovieDetailsFromAPI()
   };
-  
+
+  NavigateToMens() {
+    this.router.navigate(['mens'])
+  }
+
+  NavigateToWomens() {
+    this.router.navigate(['womens'])
+
+  }
+  NavigateTo(pathTo: string){
+    this.router.navigate([pathTo])
+  }
+
   }
 
 
