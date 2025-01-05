@@ -11,6 +11,33 @@ import { Router } from '@angular/router';
 }) 
 
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+
+  showKids: boolean = false;
+  showWomens: boolean = true;
+  showSale: boolean = false;
+
+
+  displayWomen() {
+    this.showWomens = true;
+    this.showKids = false;
+    this.showSale = false;
+  }
+
+  displayKids() {
+    this.showKids = true;
+    this.showSale = false;
+    this.showWomens = false;
+  }
+
+  displaySale() {
+    this.showSale = true;
+    this.showWomens = false;
+    this.showKids = false;
+  }
+
   //variableName:datatype=value;
    courseId:string='angular-20'
    classEnrollmentprise:number=21;
@@ -156,18 +183,7 @@ export class AppComponent {
     this.courseService.fetchMovieDetailsFromAPI()
   };
 
-  NavigateToMens() {
-    this.router.navigate(['mens'])
-  }
-
-  NavigateToWomens() {
-    this.router.navigate(['womens'])
-
-  }
-  NavigateTo(pathTo: string){
-    this.router.navigate([pathTo])
-  }
-
+  
   }
 
 

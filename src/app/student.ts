@@ -102,6 +102,7 @@ employ: EmployI={
             
         ]
     }
+    
     getStudentInfo(){
         console.log('studentData')
         this.customerDetails.transactions[1].place

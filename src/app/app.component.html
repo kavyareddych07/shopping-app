@@ -1,12 +1,27 @@
+<app-header></app-header>
 
-<ul>
-    <li><a (click)="NavigateToMens()">Mens</a></li>
-    <li><a (click)="NavigateToWomens()">Women</a></li>
-    <li><a (click)="NavigateTo('kids')">Kids</a></li>
-    <li><a (click)="NavigateTo('sale')">Sale</a></li>
-</ul>
-  
 <router-outlet></router-outlet>
+
+<ul> 
+  <li><a >Mens</a></li>
+  <li><a (click)="displayWomen()">Women</a></li>
+  <li><a (click)="displayKids()" >Kids</a></li>
+  <li><a (click)="displaySale()">Sale</a></li>
+</ul>
+@if(showSale) {
+  <app-sale></app-sale>
+}
+
+
+@if(showWomens) { 
+  <app-women></app-women>
+}
+
+
+@if(showKids) {
+  <app-kids></app-kids>
+}
+
 
   
   

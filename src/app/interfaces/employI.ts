@@ -35,7 +35,7 @@ export interface ModlesI{
     inches:number;
     colour:string;
     display:string;
-    manufacturCountry?:any
+    manufacturCountry?:manufacturCountryI
 }
 
 export interface manufacturCountryI{
@@ -57,12 +57,10 @@ export interface carModelsI{
 model:string;
 price:number;
 seats:number;
-colour:any
+colour:string[];
     }
 
-    export interface colour{
-        
-    }
+ 
 
 
     export interface movieDetailsI{
@@ -90,7 +88,7 @@ colour:any
         amount:number;
         place:string;
         date:string;
-        address?:any
+        address?:address
     }
 
     export interface address{

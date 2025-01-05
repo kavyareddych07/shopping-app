@@ -10,6 +10,10 @@ import { SaleComponent } from './Shopping/sale/sale.component';
 import { BottomComponent } from './Shopping/mens/bottom/bottom.component';
 import { TopsComponent } from './Shopping/mens/tops/tops.component';
 import { CoatsComponent } from './Shopping/mens/coats/coats.component';
+import { HeaderComponent } from './header/header.component';
+import { ModelComponent } from '../tvShowRoomDetails/model/model.component';
+import { ColorComponent } from '../tvShowRoomDetails/color/color.component';
+import { DisplayComponent } from '../tvShowRoomDetails/display/display.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { CoatsComponent } from './Shopping/mens/coats/coats.component';
     SaleComponent,
     BottomComponent,
     TopsComponent,
-    CoatsComponent
+    CoatsComponent,
+    HeaderComponent,
+    ModelComponent,
+    ColorComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule,
